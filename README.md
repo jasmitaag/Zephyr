@@ -64,5 +64,4 @@ This project is a compact prototype that combines Direct Air Capture (DAC) techn
 
 ---
 
-Made with ❤️ by Dousik  
 Contributions, forks, and feedback welcome!
