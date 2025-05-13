@@ -1,4 +1,4 @@
-#include <Servo.h>
+#include <ESP32Servo.h>
 
 Servo myServo;
 int buttonPin = 2;
@@ -11,8 +11,8 @@ unsigned long debounceDelay = 50;
 int state = 0;  // 0: Stop, 1: Open, 2: Stop, 3: Close
 
 void setup() {
-  Serial.begin(9600);
-  myServo.attach(9);  // Servo on pin 9
+  Serial.begin(115200);
+  myServo.attach(4);  // Servo on pin 9
   pinMode(buttonPin, INPUT_PULLUP);  // Button connected to GND
   myServo.writeMicroseconds(1500);  // Initial stop
   Serial.println("Initialized. State 0: Stop");

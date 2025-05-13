@@ -1,12 +1,16 @@
-int relay = 13; // Plug the relay into Digital Pin 13
+int relay = 4; // Plug the relay into Digital Pin 13
 
 void setup() {
+  Serial.begin(9600);
   pinMode(relay, OUTPUT);
 }
 
 void loop() {
-  digitalWrite(relay, HIGH); // Turn the relay on
-  delay(1000); // Wait 1 second
-  digitalWrite(relay, LOW); // Turn the relay Off
-  delay(1000); // Wait 1 second
+  Serial.println("Relay ON");
+  digitalWrite(relay, HIGH);
+  delay(1000);
+
+  Serial.println("Relay OFF");
+  digitalWrite(relay, LOW);
+  delay(1000);
 }

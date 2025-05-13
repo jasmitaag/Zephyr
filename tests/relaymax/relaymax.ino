@@ -1,12 +1,12 @@
 #include <max6675.h>
 
 // MAX6675 pin assignments
-const int thermoSO = 4;  // SO = Data Out
-const int thermoCS = 5;  // CS = Chip Select
-const int thermoSCK = 6; // SCK = Serial Clock
+const int thermoSO = 8;  // SO = Data Out
+const int thermoCS = 9;  // CS = Chip Select
+const int thermoSCK = 10; // SCK = Serial Clock
 
 // Relay control pin
-const int relayPin = 8;
+const int relayPin = 4;
 
 // Temperature thresholds
 const float tempLow = 95.0;   // Turn heater ON below this
